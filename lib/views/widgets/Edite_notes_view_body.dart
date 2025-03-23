@@ -5,6 +5,7 @@ import 'package:notes_app/logic/notes/cubit/notes_cubit.dart';
 import 'package:notes_app/models/notes_model.dart';
 import 'package:notes_app/views/widgets/custom_app_bar.dart';
 import 'package:notes_app/views/widgets/custom_text_field.dart';
+import 'package:notes_app/views/widgets/edite_note_colors_list_view.dart';
 
 class EditeNotesViewBody extends StatefulWidget {
   const EditeNotesViewBody({super.key, required this.note});
@@ -53,8 +54,14 @@ class _EditeNotesViewBodyState extends State<EditeNotesViewBody> {
               
             },
             hintText: widget.note.description,maxLines: 7,),
+
+            const SizedBox(height: 40,),
+
+             EditeColorListView(note: widget.note,),
         ],
       ),
     );
   }
 }
+
+

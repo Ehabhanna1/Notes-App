@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_app/constants.dart';
 import 'package:notes_app/logic/add_notes/cubit/add_notes_cubit.dart';
 
 class ColorItem extends StatelessWidget {
@@ -36,19 +37,7 @@ class _ColorItemListViewState extends State<ColorItemListView> {
 
   int currentIndex = 0;
 
-  List<Color> kColors = const [
-  Color(0xffAC3931),
-  Color(0xffE5D352),
-  Color(0xffff7fe0),
-  Color(0xff48C9A8),
-  Color(0xff87ceeb),
- 
-  Color(0xfff9526b),
-  Color(0xff482C3D),
   
-  Color(0xff2596be),
-
-];
 
 
 
@@ -77,3 +66,5 @@ class _ColorItemListViewState extends State<ColorItemListView> {
     );
   }
 }
+
+
