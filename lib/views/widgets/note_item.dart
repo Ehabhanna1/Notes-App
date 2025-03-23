@@ -19,7 +19,7 @@ class NoteItem extends StatelessWidget {
             title: Text("Flutter tips",style: TextStyle(color: Colors.black,fontSize: 26),),
             subtitle: Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
-              child: Text("Number of notes, build an app",style: TextStyle(color: Colors.black45,fontSize: 20),),
+              child: Text("Number of notes, build an app",style: TextStyle(color: Colors.black45,fontSize: 18),),
             ),
             trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.delete,color: Colors.black,size: 30,),
            ),

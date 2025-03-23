@@ -8,6 +8,7 @@ class NotesListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
+        padding: EdgeInsets.zero,
         itemCount: 7,
         itemBuilder: (context,index){
           return Padding(
