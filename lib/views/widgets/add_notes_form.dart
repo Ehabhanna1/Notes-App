@@ -51,7 +51,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
 
                     var currentDate = DateTime.now();
 
-                    var formattedDate = DateFormat.yMd().format(currentDate);
+                    var formattedDate = DateFormat('dd-MM-yyyy').format(currentDate);
                    
 
 
